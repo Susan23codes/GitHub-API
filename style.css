@@ -1,0 +1,55 @@
+.profile_Container {
+    border: 2px solid black;
+    background-color: blanchedalmond;
+    font-size: 20px;
+}
+
+.repo_Card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.url_Container {
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+.pic {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.name_and_avatar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.name {
+    font-size: 40px;
+    margin-top: 150px;
+}
+
+.userName {
+    margin-top: 40px;
+}
+
+.url {
+    margin: 20px;
+}
+
+.repo_name {
+    background-color: lightgray;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.repo_Card {
+}
+
+.repo_title {
+    font-size: 26px;
+    background-color: aquamarine;
+    padding: 20px;
+    margin-top: 0;
+}
