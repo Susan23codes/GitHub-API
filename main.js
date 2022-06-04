@@ -51,7 +51,7 @@ function buildProfile(data) {
     let myUrl = document.createElement("a")
     myUrl.classList.add("url")
     myUrl.innerText = "Susan23codes"
-    myUrl.setAttribute("href", data.url)
+    myUrl.setAttribute("href", data.html_url)
     urlContainer.appendChild(myUrl) 
     profileContainer.appendChild(urlContainer)
     
@@ -87,14 +87,24 @@ function buildRepo(repoArray2) {
     for (let repo of repoArray2){
         names.push(repo.name)
         // console.log(repo.name)
+
+        let iconLinkP = document.createElement("p")
+
+        let icon = document.createElement("i")
+        icon.classList.add("fa-solid")
+        icon.classList.add("fa-folder-open")
+        iconLinkP.appendChild(icon)
+
+
         let repoName = document.createElement("a")
         repoName.classList.add("repo_name")
         repoName.innerText = repo.name
         repoName.setAttribute("href", repo.html_url)
-        // console.log(names)
-        repoCard.appendChild(repoName)
+        iconLinkP.appendChild(repoName)
+        repoCard.appendChild(iconLinkP)
+
     }
-    // console.log(names)
+
 
 }
 // <a href="url" class="stuff">repo name</a>
@@ -103,5 +113,4 @@ function buildRepo(repoArray2) {
 //variable.innerText==repo name - <a class="stuff">repo name</a>
 // variable.setAttribute("href", url) - <a href=url class="stuff">repo name</a>
 //appending variable to repo card
-
 
